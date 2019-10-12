@@ -1,0 +1,7 @@
+title Forms and HTTP POST
+
+note over browser: user clicks submit
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note with form data "note"
+server->browser: status code 302 (URL Redirect), requesting browser to reload on /notes
+note over server: server appends "note" to data array
+note over browser: Browser reloads /notes page

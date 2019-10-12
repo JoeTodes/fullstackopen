@@ -1,0 +1,8 @@
+title Forms and HTTP POST - SPA
+
+note over browser: user clicks submit
+note over browser: event handler callback in spa.js appends note data to local data object
+note over browser: spa.js instructs browser to re-render only the notes element
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_not_spa with form data "note"
+server->browser: status code 201 (Created), with the message "note created"
+note over server: server appends "note" to it's own data array for future page loads
