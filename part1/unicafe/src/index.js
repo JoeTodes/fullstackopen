@@ -17,7 +17,6 @@ const Statistic = (props) => {
     )
 }
 
-
 const Statistics = (props) => {
     const total = () => {
         return (props.good + props.neutral + props.bad)
